@@ -2,7 +2,7 @@
 
 **TaskManager** é um gerenciador de tarefas moderno e intuitivo, projetado para melhorar a sua produtividade. Organize suas tarefas de maneira simples e eficiente com uma interface limpa, fácil de usar e totalmente responsiva.
 
-![Imagem](./imgREADME.png)
+![Imagem](./src/assets/imgREADME.png)
 
 ## ✨ **Funcionalidades**
 
