@@ -1,30 +1,39 @@
 #root {
-  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: flex-start; /* Alinha no topo */
   text-align: center;
+  width: 100%;
+  height: 100vh; /* Garante que a altura ocupe toda a tela */
+  margin: 0;
 }
 
 .logo {
   margin: 0;
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 0; /* Posiciona o logo no topo */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajusta o centro exato */
   will-change: filter;
   transition: filter 300ms;
+  z-index: 10;
 }
 
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #646cff);
+  z-index: 10;
 }
 
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #61dafb);
+  z-index: 10;
 }
 
 .verDetalhes {
   background-color: rgb(101, 101, 226);
   margin: 6px 3px;
 }
+
 .lista {
   background-color: rgb(101, 101, 226);
   margin: 6px 3px;
@@ -34,8 +43,8 @@
 ul {
   border-radius: 5px;
   padding: 10px;
-  margin-top: 255px;
 }
+
 li {
   display: flex;
   list-style: none;
@@ -43,17 +52,20 @@ li {
 
 .linha-sobre {
   text-decoration: line-through;
+  background-color: rgb(70, 70, 177);
 }
 
 .fundo {
   background-color: rgb(170, 170, 170);
   width: 500px;
 }
+
 input {
   border-radius: 5px;
   outline: grey;
   height: 30px;
   margin: 0 3px;
+  background-color: rgb(43, 43, 43);
 }
 
 #adicionarTask {
@@ -62,6 +74,18 @@ input {
   padding: 10px;
   border-radius: 5px;
   gap: 3px;
-  position: absolute;
-  top: 100px;
+  margin-top: 25%;
+}
+
+.taskLogo {
+  color: rgb(101, 101, 226);
+  display: inline;
+}
+
+.taskLogo:hover {
+  filter: brightness(1.5);
+}
+
+button:hover {
+  filter: brightness(1.5) drop-shadow(0 0 2em #646cff);
 }

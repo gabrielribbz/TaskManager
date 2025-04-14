@@ -54,7 +54,10 @@ function App() {
 
   return (
     <div>
-      <h1 className="logo">Task Manager</h1>
+      <h1 className="logo">
+        <p className="taskLogo">Task</p>
+        Manager
+      </h1>
       <AddTask onAddTaskSubmit={onAddTaskSubmit} />
       <Tasks tasks={tasks} onTaskClick={onTaskClick} deleteTask={deleteTask} />
     </div>

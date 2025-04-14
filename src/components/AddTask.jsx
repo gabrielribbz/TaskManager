@@ -22,7 +22,7 @@ function AddTask(props) {
         className="verDetalhes"
         onClick={() => {
           if (!title || !description) {
-            return alert("Preencha as informações");
+            return;
           }
           props.onAddTaskSubmit(title, description);
           setDescription("");
